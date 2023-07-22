@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+body {
+    max-width: 1220px;
+    height: 100vh;
+    margin: auto;
+    background: var(--background-bg-secondary, #161622);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 303px;
+}
+
+.container .left {
+    max-width: 590px;
+}
+
+.container .left p {
+    color: var(--text-txt-secondary, rgba(255, 255, 255, 0.75));
+    font: 400 24px Inter;
+    margin-bottom: 16px;
+}
+
+.container .left h1 {
+    color: var(--text-txt-primary, rgba(255, 255, 255, 0.90));
+    font: 700 48px Inter;
+    margin-bottom: 40px;
+}
+
+.container .left .buttons {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+
+}
+
+.container .left .buttons .button1,
+.container .left .buttons .button2 {
+    width: 145px;
+    border-radius: 8px;
+    background: var(--brand-primary, #6F1DF4);
+    color: var(--pallete-white, #FFF);
+    text-align: center;
+    padding: 15px 0;
+    font: 700 16px Inter;
+}
+
+.container .right {
+    background-image: url(assets/40422.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 190px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        max-width: 408px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        max-width: 408px;
+        height: 400px;
+    }
+
+    .container .right {
+        width: 349px;
+        height: 135px;
+    }
+
+    .container .left p {
+        margin-bottom: 16px;
+        font: 400 20px Inter;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .container .left h1 {
+        font: 700 32px Inter;
+        text-align: center;
+    }
+
+    .container .left .buttons {
+        margin: auto;
+    }
+
+    .container .left .buttons .button1 {
+        margin-right: 12px;
+    }
+
+
+
+
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    .container {
+        max-width: 343px;
+    }
+
+    .container .right {
+        width: 230px;
+        height: 90px;
+    }
+
+    .container .left p {
+        font: 400 18px Inter;
+    }
+
+    .container .left h1 {
+        font: 700 28px Inter;
+    }
+
+    .container .left .buttons {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container .left .buttons .button1,
+    .container .left .buttons .button2 {
+        width: 100%;
+    }
+
+    .container .left .buttons .button1 {
+        margin-bottom: 20px;
+    }
+
+
+}
